@@ -1,5 +1,5 @@
 module "some-repo" {
-  source = "git@github.com:masterborn/masterborn-terraform-modules.git//github/default-repository"
+  source = "git@github.com:masterborn/terraform-github-default-repository.git?ref={{ provider_version }}"
 
   repository_name        = "some-repo"
   repository_description = "Example repo"

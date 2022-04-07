@@ -54,7 +54,7 @@ Resource that allows to declare [branch protection rules](https://docs.github.co
 ### Basic example
 ```hcl
 module "some-repo" {
-  source = "git@github.com:masterborn/masterborn-terraform-modules.git//github/default-repository"
+  source = "git@github.com:masterborn/terraform-github-default-repository.git?ref=v0.0.0"
 
   repository_name        = "some-repo"
   repository_description = "Example repo"
