@@ -23,11 +23,6 @@ Resource that allows to declare [branch protection rules](https://docs.github.co
 | [github_team_repository.admin](https://registry.terraform.io/providers/github/latest/docs/resources/team_repository) | resource |
 | [github_team_repository.pull](https://registry.terraform.io/providers/github/latest/docs/resources/team_repository) | resource |
 | [github_team_repository.push](https://registry.terraform.io/providers/github/latest/docs/resources/team_repository) | resource |
-## Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_github"></a> [github](#provider\_github) | < 5.0 |
 ## Inputs
 
 | Name | Description | Type | Default | Required |

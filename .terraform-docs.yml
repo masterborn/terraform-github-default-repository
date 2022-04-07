@@ -5,7 +5,6 @@ content: |-
   {{ .Modules }}
   {{ .Providers }}
   {{ .Resources }}
-  {{ .Providers }}
   {{ .Inputs }}
   {{ .Outputs }}
 
