@@ -58,3 +58,19 @@ variable "license_template" {
   type        = string
   default     = null
 }
+
+variable "has_issues" {
+  description = "Enables GitHub Issues feature"
+  type        = bool
+  default     = false
+}
+variable "has_projects" {
+  description = "Enables GitHub Projects feature"
+  type        = bool
+  default     = false
+}
+variable "has_wiki" {
+  description = "Enables GitHub Wiki feature"
+  type        = bool
+  default     = false
+}

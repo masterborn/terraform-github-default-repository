@@ -38,6 +38,9 @@ Resource that allows to declare [branch protection rules](https://docs.github.co
 | <a name="input_template"></a> [template](#input\_template) | If passed, then repository will be created from the template. | <pre>object({<br>    owner      = string<br>    repository = string<br>  })</pre> | `null` | no |
 | <a name="input_allow_rebase"></a> [allow\_rebase](#input\_allow\_rebase) | Allow developers to modify history of commits. | `bool` | `false` | no |
 | <a name="input_license_template"></a> [license\_template](#input\_license\_template) | License template eg: "mit", "mpl-2.0". | `string` | `null` | no |
+| <a name="input_has_issues"></a> [has\_issues](#input\_has\_issues) | Enables GitHub Issues feature | `bool` | `false` | no |
+| <a name="input_has_projects"></a> [has\_projects](#input\_has\_projects) | Enables GitHub Projects feature | `bool` | `false` | no |
+| <a name="input_has_wiki"></a> [has\_wiki](#input\_has\_wiki) | Enables GitHub Wiki feature | `bool` | `false` | no |
 ## Outputs
 
 | Name | Description |
