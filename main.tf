@@ -4,9 +4,9 @@ resource "github_repository" "default" {
 
   visibility = var.repository_private == true ? "private" : "public"
 
-  has_issues   = false
-  has_projects = false
-  has_wiki     = false
+  has_issues   = var.has_issues
+  has_projects = var.has_projects
+  has_wiki     = var.has_wiki
 
   delete_branch_on_merge = true
 
