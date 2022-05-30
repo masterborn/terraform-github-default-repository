@@ -7,6 +7,12 @@ variable "repository_description" {
   type        = string
 }
 
+variable "homepage_url" {
+  description = "URL of a page describing the project"
+  type        = string
+  default     = ""
+}
+
 variable "repository_private" {
   description = "Set repository visible outside of organization. (Default: true)"
   type        = bool
@@ -71,6 +77,12 @@ variable "has_projects" {
 }
 variable "has_wiki" {
   description = "Enables GitHub Wiki feature"
+  type        = bool
+  default     = false
+}
+
+variable "vulnerability_alerts" {
+  description = "Set to enable security alerts for vulnerable dependencies"
   type        = bool
   default     = false
 }
