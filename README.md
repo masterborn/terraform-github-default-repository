@@ -29,6 +29,7 @@ Resource that allows to declare [branch protection rules](https://docs.github.co
 |------|-------------|------|---------|:--------:|
 | <a name="input_repository_name"></a> [repository\_name](#input\_repository\_name) | Name of the repository that is point of module | `string` | n/a | yes |
 | <a name="input_repository_description"></a> [repository\_description](#input\_repository\_description) | Description that will be visible on board of projects inside GitHub | `string` | n/a | yes |
+| <a name="input_homepage_url"></a> [homepage\_url](#input\_homepage\_url) | URL of a page describing the project | `string` | `""` | no |
 | <a name="input_repository_private"></a> [repository\_private](#input\_repository\_private) | Set repository visible outside of organization. (Default: true) | `bool` | `true` | no |
 | <a name="input_archived"></a> [archived](#input\_archived) | Set to true to archive repository. (Default: false) | `bool` | `false` | no |
 | <a name="input_pull_teams"></a> [pull\_teams](#input\_pull\_teams) | Teams ids that will have read-only access to the repository. | `list(string)` | `[]` | no |
@@ -41,6 +42,7 @@ Resource that allows to declare [branch protection rules](https://docs.github.co
 | <a name="input_has_issues"></a> [has\_issues](#input\_has\_issues) | Enables GitHub Issues feature | `bool` | `false` | no |
 | <a name="input_has_projects"></a> [has\_projects](#input\_has\_projects) | Enables GitHub Projects feature | `bool` | `false` | no |
 | <a name="input_has_wiki"></a> [has\_wiki](#input\_has\_wiki) | Enables GitHub Wiki feature | `bool` | `false` | no |
+| <a name="input_vulnerability_alerts"></a> [vulnerability\_alerts](#input\_vulnerability\_alerts) | Set to enable security alerts for vulnerable dependencies | `bool` | `false` | no |
 ## Outputs
 
 | Name | Description |
@@ -52,7 +54,7 @@ Resource that allows to declare [branch protection rules](https://docs.github.co
 ### Basic example
 ```hcl
 module "some-repo" {
-  source = "git@github.com:masterborn/terraform-github-default-repository.git?ref=v1.0.1"
+  source = "git@github.com:masterborn/terraform-github-default-repository.git?ref=v1.0.2"
 
   repository_name        = "some-repo"
   repository_description = "Example repo"

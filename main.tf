@@ -1,12 +1,14 @@
 resource "github_repository" "default" {
-  name        = var.repository_name
-  description = var.repository_description
+  name         = var.repository_name
+  description  = var.repository_description
+  homepage_url = var.homepage_url
 
   visibility = var.repository_private == true ? "private" : "public"
 
-  has_issues   = var.has_issues
-  has_projects = var.has_projects
-  has_wiki     = var.has_wiki
+  has_issues           = var.has_issues
+  has_projects         = var.has_projects
+  has_wiki             = var.has_wiki
+  vulnerability_alerts = var.vulnerability_alerts
 
   delete_branch_on_merge = true
 
